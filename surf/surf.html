@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edge Surf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            background-color: #0077be; /* Ocean Blue */
+            color: #ffffff;
+            text-align: center;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 15px 10px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #005c94;
+            color: #ffffff;
+            padding: 8px 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+        }
+        canvas {
+            background-color: #0097e6; /* Bright Water */
+            border: 3px solid #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        /* Mobile Touch Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .ctrl-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 40px;
+            touch-action: manipulation;
+        }
+        .ctrl-btn:active {
+            background-color: #ffffff;
+            color: #0077be;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">⬅ Back to Menu</a>
+
+    <canvas id="surfCanvas" width="400" height="550"></canvas>
+
+    <div class="controls">
+        <button class="ctrl-btn" id="btnLeft">◀</button>
+        <button class="ctrl-btn" id="btnRight">▶</button>
+    </div>
+
+    <script src="surf.js"></script>
+</body>
+</html>
