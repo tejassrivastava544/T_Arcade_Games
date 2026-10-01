@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hacker Terminal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            background-color: #000000;
+            color: #00ff00; /* Hacker Green */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 15px;
+            overflow-x: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .back-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background-color: #111;
+            color: #00ff00;
+            padding: 8px 15px;
+            text-decoration: none;
+            border: 1px solid #00ff00;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 100;
+        }
+        .back-btn:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+        #console {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.3;
+            padding-bottom: 50px;
+        }
+        #cursor {
+            font-size: 16px;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        #access-granted {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid #00ff00;
+            background-color: rgba(0, 0, 0, 0.95);
+            color: #00ff00;
+            padding: 20px 40px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 200;
+            box-shadow: 0 0 30px #00ff00;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">DISCONNECT</a>
+    
+    <span id="console"></span><span id="cursor">█</span>
+    
+    <div id="access-granted">ACCESS GRANTED</div>
+
+    <script src="hacker.js"></script>
+</body>
+</html>
