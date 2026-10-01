@@ -117,6 +117,123 @@
             <h2>Space Invaders</h2>
             <a href="invaders/invaders.html" class="game-btn">Play Now</a>
         </div>
+        
+        <!-- AUTO-FETCHING GAME CARD -->
+<div class="game-card auto-fetch" data-url="https://eaglercraft.com">
+  <h2 style="text-align: center; margin-top: 50px;">Loading game...</h2>
+</div>
+
+
+          
+          <!-- START OF AUTO-FETCH CODE (Paste right above </body>) -->
+<script>
+  document.querySelectorAll('.auto-fetch').forEach(card => {
+    const gameUrl = card.getAttribute('data-url');
+    fetch(`https://api.microlink.io/?url=${encodeURIComponent(gameUrl)}`)
+      .then(res => res.json())
+      .then(data => {
+        const title = data.data.title || "Unknown Game";
+        const imgUrl = data.data.image ? data.data.image.url : "https://via.placeholder.com/300x150/000/fff?text=No+Cover";
+        
+        // target="_blank" forces the external game to open in a new browser tab safely
+        card.innerHTML = `
+          <img src="${imgUrl}" alt="${title}" class="game-img">
+          <h2>${title}</h2>
+          <a href="${gameUrl}" target="_blank" class="game-btn">Play Now</a>
+        `;
+      });
+  });
+</script>
+<!-- END OF AUTO-FETCH CODE -->
+
+                 <!-- GAME CARD 6: HACKER TYPER -->
+        <div class="game-card">
+            <img src="hacker-img.jpg" alt="Hacker Typer" class="game-img">
+            <h2>Hacker Typer</h2>
+            <a href="hacker/hacker.html" class="game-btn">Hack Now</a>
+        </div>
+        
+        <!-- AUTO-FETCHING GAME CARD -->
+<div class="game-card auto-fetch" data-url="https://pradeep-kirana-eight.vercel.app/">
+  <h2 style="text-align: center; margin-top: 50px;">Loading game...</h2>
+</div>
+
+<!-- START OF AUTO-FETCH CODE (Paste right above </body>) -->
+<script>
+  document.querySelectorAll('.auto-fetch').forEach(card => {
+    const gameUrl = card.getAttribute('data-url');
+    fetch(`https://api.microlink.io/?url=${encodeURIComponent(gameUrl)}`)
+      .then(res => res.json())
+      .then(data => {
+        const title = data.data.title || "Unknown Game";
+        const imgUrl = data.data.image ? data.data.image.url : "https://via.placeholder.com/300x150/000/fff?text=No+Cover";
+        
+        // target="_blank" forces the external game to open in a new browser tab safely
+        card.innerHTML = `
+          <img src="${imgUrl}" alt="${title}" class="game-img">
+          <h2>${title}</h2>
+          <a href="${gameUrl}" target="_blank" class="game-btn">Play Now</a>
+        `;
+      });
+  });
+</script>
+<!-- END OF AUTO-FETCH CODE -->
+
+            
+
+         <!-- AUTO-FETCHING GAME CARD -->
+<div class="game-card auto-fetch" data-url="https://paperio.site/">
+  <h2 style="text-align: center; margin-top: 50px;">Loading game...</h2>
+</div>
+        
+        <!-- START OF AUTO-FETCH CODE (Paste right above </body>) -->
+<script>
+  document.querySelectorAll('.auto-fetch').forEach(card => {
+    const gameUrl = card.getAttribute('data-url');
+    fetch(`https://api.microlink.io/?url=${encodeURIComponent(gameUrl)}`)
+      .then(res => res.json())
+      .then(data => {
+        const title = data.data.title || "Unknown Game";
+        const imgUrl = data.data.image ? data.data.image.url : "https://via.placeholder.com/300x150/000/fff?text=No+Cover";
+        
+        // target="_blank" forces the external game to open in a new browser tab safely
+        card.innerHTML = `
+          <img src="${imgUrl}" alt="${title}" class="game-img">
+          <h2>${title}</h2>
+          <a href="${gameUrl}" target="_blank" class="game-btn">Play Now</a>
+        `;
+      });
+  });
+</script>
+<!-- END OF AUTO-FETCH CODE -->
+
+         <!-- AUTO-FETCHING GAME CARD -->
+<div class="game-card auto-fetch" data-url="https://holeio.com">
+  <h2 style="text-align: center; margin-top: 50px;">Loading game...</h2>
+</div>
+
+        <!-- START OF AUTO-FETCH CODE (Paste right above </body>) -->
+<script>
+  document.querySelectorAll('.auto-fetch').forEach(card => {
+    const gameUrl = card.getAttribute('data-url');
+    fetch(`https://api.microlink.io/?url=${encodeURIComponent(gameUrl)}`)
+      .then(res => res.json())
+      .then(data => {
+        const title = data.data.title || "Unknown Game";
+        const imgUrl = data.data.image ? data.data.image.url : "https://via.placeholder.com/300x150/000/fff?text=No+Cover";
+        
+        // target="_blank" forces the external game to open in a new browser tab safely
+        card.innerHTML = `
+          <img src="${imgUrl}" alt="${title}" class="game-img">
+          <h2>${title}</h2>
+          <a href="${gameUrl}" target="_blank" class="game-btn">Play Now</a>
+        `;
+      });
+  });
+</script>
+<!-- END OF AUTO-FETCH CODE -->
+
+
 
 
 
